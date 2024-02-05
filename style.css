@@ -1,0 +1,171 @@
+body {
+    position: relative;
+    background-color: black ;
+    display: flex;
+    align-items: center;
+    column-gap: 2.3em;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+#titulo {
+    color: #055c71;
+    font-weight: 700;
+    font-family: monospace;
+    text-align: left;
+    display: flex;
+    column-gap: 20px;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+#titulo__iconeAlura {
+    max-width: 2.5em;
+    max-height: 2.5em;
+    width: auto;
+    height: auto;
+}
+
+#titulo__texto {
+    margin-top: 0px;
+    position: absolute;
+    padding-left: 33px;
+    padding-bottom: 50px;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+#mensagem {
+    background-color: #191919;
+    border-radius: 30px;
+    font-family: monospace;
+    width: 700px;
+    height: 400px;
+    left: 1000px;
+}
+
+#input__text {
+    font-family: monospace;
+    font-size: 18px;
+    background-color: #191919;
+    margin-left: 1.2em;
+    margin-top: 1.2em;
+    border: none;
+    outline: none;
+    color: gray;
+    width: 650px;
+
+}
+
+#alerta {
+    color: #055c71;
+    align-self: center;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-family: sans-serif;
+}
+
+#botoes {
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 10px;
+}
+
+#botaoCriptografar, #botaoDescriptografar, #botaoCopiar {
+    width: 320px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#botaoCriptografar:hover, #botaoDescriptografar:hover, #botaoCopiar:hover {
+    opacity: 80%;
+}
+
+#botaoCriptografar, #botaoDescriptografar {
+    background-color: #055c71;
+    color: #d9d9d9;
+}
+
+#botaoCriptografar:active, #botaoDescriptografar:active{
+    background-color: #191919;
+    color: #d9d9d9;
+}
+
+#resultado {
+    width: 350px;
+    height: 570px;
+    border-radius: 30px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #055c71;
+    flex-wrap: wrap;
+}
+
+#mostrarMensagem {
+    display: flex;
+    flex-direction: column;
+    padding-top: 180px;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHBibmxuaWs3azYxZ3IzdjhkZGQ3OXJkbnJhZHE2dXUxd2ZjY3o3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/lqwWvqEjimTSlLcms7/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: 210px;
+    background-position: top;
+    font-family: sans-serif;
+}
+
+#aguardandoMensagem__texto1 {
+    margin-bottom: 0;
+    font-size: 21px;
+}
+
+#aguardandoMensagem__texto2 {
+    margin-top: 2px;
+    font-size: 19px;
+}
+
+#botaoCopiar {
+    background-color: #191919;
+    color: #d9d9d9cb;
+    align-self: flex-end;
+}
+
+#output__copiar {
+    display: none;
+    height: 540px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    max-width: min-content;
+}
+
+#output__id {
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#output {
+    word-break: break-all;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#footer {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    color: #055c71;
+    font-size: 12px;
+    font-family: sans-serif;
+}

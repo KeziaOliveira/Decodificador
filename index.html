@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html leng="pt-br">
+    <head>
+        <meta chasrdet="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge decodificador</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="./assets/lupa.png">
+        <script src="https://kit.fontawesome.com/c06b567bbf.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <section id="decodificador">
+            <div id="titulo">
+                <img id="titulo__iconeAlura" src="./assets/aluraicone.png" alt="Ìcone Alura">
+                <h1 id="titulo__texto">Decodificador</h1>
+            </div>
+            <div id="mensagem">
+                <input type="text" id="input__text" name="input" placeholder="Insira o texto aqui ..."></input> 
+            </div> 
+            <div id="alerta">
+                <i class="fa-solid fa-circle-exclamation fa-beat-fade" style="color: #055c71;"></i>
+                <p>São aceitos apenas caracteres minúsculos e sem acento</p>
+            </div>
+            <div id="botoes" onclick="exibirMensagem()">
+                <button id="botaoCriptografar" onclick="criptografar()">Criptografar</button> 
+                <button id="botaoDescriptografar" onclick="descriptografar()">Descriptografar</button> 
+            </div>
+        </section>
+        <section id="resultado">
+            <div id="mostrarMensagem">
+                    <p id="aguardandoMensagem__texto1"><strong>Nenhuma mensagem encontrada</strong></p>
+                    <p id="aguardandoMensagem__texto2">Digite ao lado o que você deseja criptografar ou descriptografar</p> 
+            </div>
+            <div id="output__copiar">
+                <p id="output__id">Sua mensagem é:</p>
+                <p type="text" id="output" wrap="off"></p>
+                <button id="botaoCopiar" onclick="copiar()" >Copiar</button>
+            </div>
+        </section>
+    </body>
+
+    <footer id="footer"> 
+      Made by Kezia Oliveira - 2024
+    </footer>
+
+
+<script type="text/javascript" src="./index.js"></script>
+
+</html>  
