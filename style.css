@@ -54,7 +54,8 @@ body {
     outline: none;
     color: gray;
     width: 650px;
-
+    height: 350px;
+    resize: none;
 }
 
 #alerta {
